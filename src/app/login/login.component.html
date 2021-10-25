@@ -1,0 +1,33 @@
+<div>
+    <h1>Login Page</h1>
+</div><br><br>
+
+<div class="row ">
+
+    <div class="col-6 card col-md-5 m-auto">
+        <div>
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                <div class="mb-3 m-auto">
+                    <label class="form-label">Enter the UserName</label>
+                    <input type="text" class="form-control" ngModel name="username" placeholder="Enter UserName">
+
+                </div>
+                <div class="mb-3  ">
+                    <label for="exampleInputPassword1" class="form-label">Enter the Password</label>
+                    <input type="password" class="form-control" ngModel name="password" placeholder="Enter Password">
+                </div>
+
+                <button class="btn btn-primary">Login</button>
+            </form>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
+
+    </div>
+    <div class="col-6"><img class="image"
+            src="https://www.kindpng.com/picc/m/1-17962_man-standing-png-transparent-png.png" alt="" width="700px"
+            height="400px">
+    </div>
+</div>
